@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paean Biotechnology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .about-section {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar border-b border-[#DEDEDE]">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 md:px-20 py-4">
+
+            <!-- Logo -->
+            <div class="left flex-shrink-0">
+                <img src="./assets/images/navbar-logo.svg" alt="Logo" class="h-8">
+            </div>
+
+            <!-- Menu Desktop -->
+            <div class="center hidden md:flex flex-grow justify-center">
+                <ul class="flex space-x-6 items-center">
+                    <li>
+                        <a href="" class="text-[#1D1D1D] font-semibold border-b-2 border-[#1D1D1D] pb-1">Home</a>
+                    </li>
+                    <li><a href="" class="text-[#1D1D1D] font-medium">The Power of Mitochondria</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="relative group">
+                        <button class="text-[#1D1D1D] font-medium flex items-center">
+                            Mitochondria based Platform
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown Content -->
+                        <ul
+                            class="absolute left-1/2 top-full hidden group-hover:flex bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 border border-gray-200 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2">
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Mitochondrial
+                                    Transplantation</a>
+                            </li>
+                            <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Modified Mitochondrial
+                                    Transplantation</a>
+                            </li>
+                            <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Modified Mitochondria
+                                    Augmented - Cell Therapy</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="" class="text-[#1D1D1D] font-medium">Newsroom</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Section (Desktop) -->
+            <div class="right hidden md:flex items-center space-x-4">
+                <div class="flex items-center space-x-2 text-sm">
+                    <p class="eng-lag cursor-pointer font-semibold text-[#1D1D1D]">ENG</p>
+                    <p>|</p>
+                    <p class="kor-lag cursor-pointer font-medium text-[#929292]">KOR</p>
+                </div>
+                <a href="">
+                    <button
+                        class="bg-[#fff] font-bold text-[#1D1D1D] px-4 py-2 rounded-lg border-[1.5px] border-[#1D1D1D] transition text-sm">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+
+            <button id="burger" class="md:hidden text-2xl text-[#1D1D1D]">
+                <i id="burgerIcon" class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="mobileMenu"
+        class="hidden md:hidden absolute top-[64px] left-0 w-full bg-white border-t border-[#DEDEDE] z-50">
+        <ul class="flex flex-col space-y-4 p-6 text-[#1D1D1D] font-medium">
+            <li><a href="">Home</a></li>
+            <li><a href="">The Power of Mitochondria</a></li>
+            <li class="font-semibold">Mitochondria based Platform</li>
+            <ul class="ml-4 space-y-2 text-sm">
+                <li><a href="">Mitochondrial Transplantation</a></li>
+                <li><a href="">Modified Mitochondrial Transplantation</a></li>
+                <li><a href="">Modified Mitochondria Augmented - Cell Therapy</a></li>
+            </ul>
+            <li><a href="">Newsroom</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li class="flex space-x-2">
+                <p class="font-semibold">ENG</p>
+                <p>|</p>
+                <p class="text-[#929292]">KOR</p>
+            </li>
+        </ul>
+    </div>
+
+    <section class="hero-section mt-0 md:mt-10">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+
+            <div class="h-screen md:h-[485px] bg-cover bg-center rounded-2xl flex items-center"
+                style="background-image: url('./assets/images/background-hero.svg');">
+
+                <div class="max-w-screen-xl mx-auto flex items-center justify-between px-8 md:px-10">
+
+                    <div class="left w-full md:max-w-[700px] flex-none">
+                        <h1 class="text-[38.5px] font-medium leading-tight text-[#1D1D1D] mb-4">
+                            Revolutionizing Healthcare <br>
+                            Through <span class="font-bold">Mitochondrial </span> Innovation
+                        </h1>
+                        <p class="text-[20px] text-[#535353] mb-6">
+                            We develop next-generation mitochondrial therapeutics to treat
+                            rare diseases and cancer—bridging science, innovation, and impact!
+                        </p>
+                        <div class="block md:flex space-x-4">
+                            <a href="">
+                                <button
+                                    class="bg-[#1C74E8] mb-5 md:mb-0 text-white px-5 py-3 rounded-lg text-[16px] font-bold">
+                                    Discover Our Technology
+                                </button>
+                            </a>
+                            <a href="">
+                                <button style="border:1.5px solid #1C74E8"
+                                    class="ml-[-15px] md:ml-0  bg-transparent text-[#1C74E8] px-5 py-3 rounded-lg text-[16px] font-bold">
+                                    Connect With Us
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="hidden md:block right flex-shrink-0 mt-40 ml-[-170px]">
+                        <img src="./assets/images/image-hero.svg" alt="" class="w-[700px]">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section px-6 md:px-20 py-14 text-center mt-0 md:mt-20">
+        <p class="text-[#1C74E8] font-bold text-[24px] mb-3">About Us</p>
+        <h2 class="text-[#1D1D1D] font-medium text-[28px] md:text-[32px] max-w-4xl mx-auto leading-snug">
+            <span class="italic text-[#24BB7D] font-bold">PAEAN Biotechnology</span> a
+            pioneer in mitochondria-based
+            therapeutics, is the first company to
+            develop mitochondria as biopharmaceutical agents to
+            <span class="text-[#1D1D1D] font-bold">Treat Diseases.</span>
+        </h2>
+
+        <!-- Grid Content -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch justify-center">
+            <!-- Card 1 -->
+            <div class="relative">
+                <img src="./assets/images/about-product.svg" alt="Product" class="rounded-lg w-full">
+                <div class="absolute top-[230px] left-0 flex flex-col items-start justify-end text-left p-8">
+                    <h2 class="text-[#fff] font-semibold text-[28px] md:text-[32px]">3 Products</h2>
+                    <p class="text-[#DEDEDE] font-medium text-[18px] md:text-[20px]">Under Development</p>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center justify-center text-left space-y-5 ml-[-10px] mt-1 md:mt-[-25px]">
+                <!-- Gambar dulu di mobile -->
+                <img src="./assets/images/about-pro.svg" alt=""
+                    class=" ml-2 md:ml-[40px] mb-5 md:mb-0 order-1 md:order-2">
+
+                <!-- Teks -->
+                <div class="block md:flex items-center space-x-4 mt-[-50px] relative top-[-20px] order-2 md:order-1">
+                    <img src="./assets/images/about-profile.svg" alt="">
+                    <p
+                        class="flex-none text-[#5F5F5F] font-medium text-[16px] relative top-3 md:top-0  w-full md:w-[250px]">
+                        Managed by a Professional Team
+                        Over 20 Years of Experience in
+                        Digital Biotechnology
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-start text-left ml-10">
+                <img src="./assets/images/about-collaboration.svg" alt=""
+                    class="ml-[-10px] mt-[-10px] md:mt-0 md:ml-0 w-[280px]">
+                <h2 class="text-[#1C74E8] mb-2 md:mb-0  mt-2   md:mt-0 font-bold text-[36px] md:text-[40px]">$21M+</h2>
+                <p class="text-[#5F5F5F] font-medium text-[16px] mt-[-5px] max-w-[315px]">
+                    R&D and Investment Funds Raised Towards Development & Commercialization
+                    of the World's First Mitochondrial Therapy
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="our-mission-section p-2 md:p-0 mt-0 md:mt-10">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+
+            <div class="h-[450px] md:h-[423px]  bg-cover bg-center rounded-2xl flex items-center"
+                style="background-image: url('./assets/images/our-mission-background.svg');">
+
+                <div class="max-w-screen-xl mx-auto px-6 md:px-10 text-center space-y-6">
+
+                    <h2 class="text-[#4795FD] font-bold text-[20px] md:text-[24px]">
+                        Our Mission
+                    </h2>
+
+                    <p class="text-[#fff] font-semibold text-[24px] md:text-[32px] leading-snug">
+                        Our mission is to revolutionize healthcare
+                        <br>
+                        <span class="text-[#AAAAAA]">by harnessing the untapped potential of mitochondria.</span>
+                    </p>
+
+                    <!-- pakai max-w + mx-auto biar center dan responsive -->
+                    <p
+                        class="text-[#A6A6A6] font-medium text-[16px] md:text-[20px] max-w-[873px] mx-auto leading-relaxed">
+                        We are committed to advancing mitochondria-based technologies to develop
+                        innovative therapies for rare, chronic, and hard-to-treat diseases—improving quality of life
+                        through science-driven breakthroughs.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-values-section py-[120px] mt-[-100px] md:mt-0 bg-cover bg-center"
+        style="background-image: url('./assets/images/our-values-background.svg');">
+        <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-start gap-10">
+
+
+            <!-- Left -->
+            <div class="left md:w-1/2 space-y-5 mt-10">
+                <p class="text-[#1C74E8] font-bold text-[24px]">Our Values</p>
+                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-medium leading-snug">
+                    <span class="text-[#24BB7D] font-extrabold  ">At PAEAN</span>, we are driven by values that shape
+                    our
+                    <span class="font-extrabold italic ">science</span> and
+                    <span class="font-extrabold italic">spirit.</span>
+                </h2>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                    We foster innovation to push the boundaries of biotechnology, embrace collaboration to work across
+                    disciplines and partners, harness advanced technology to solve unmet medical needs, and uphold rigor
+                    in every process to ensure excellence and trust.
+                </p>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                    These values are embedded in everything we do—every discovery, every trial, every breakthrough.
+                </p>
+            </div>
+
+            <!-- Right -->
+            <div class="kanan md:w-1/2">
+                <!-- tambahin text-center biar isi box gampang rata tengah -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center text-center">
+
+                    <!-- Box 1 -->
+                    <div
+                        class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] bg-white rounded-xl flex flex-col items-center justify-center">
+                        <img src="./assets/images/innovatif-icon.svg" class="mb-3 w-[100px]" alt="">
+                        <h2 class="text-[20px] font-semibold">Innovative</h2>
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div
+                        class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] bg-white rounded-xl flex flex-col items-center justify-center">
+                        <img src="./assets/images/collaborative-icon.svg" class="mb-3 w-[100px]" alt="">
+                        <h2 class="text-[20px] font-semibold">Collaborative</h2>
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div
+                        class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] bg-white rounded-xl flex flex-col items-center justify-center">
+                        <img src="./assets/images/technology-icon.svg" class="mb-3 w-[100px]" alt="">
+                        <h2 class="text-[20px] font-semibold">Technology</h2>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div
+                        class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] bg-white rounded-xl flex flex-col items-center justify-center">
+                        <img src="./assets/images/rigo-icon.svg" class="mb-3 w-[100px]" alt="">
+                        <h2 class="text-[20px] font-semibold">Rigorous</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="understading-section mt-[-100px] md:mt-0 bg-cover bg-center"
+        style="background-image: url('./assets/images/background-understanding.svg');">
+        <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start gap-10">
+
+            <!-- Left -->
+            <div class="left md:w-1/2 space-y-5 mt-10 hidden md:block">
+                <img src="./assets/images/understanding-image.svg" alt="">
+            </div>
+
+            <!-- Right -->
+            <div class="kanan md:w-1/2 space-y-5 mt-10">
+                <p class="text-[#1C74E8] font-bold text-[24px]">The Understanding</p>
+                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-medium leading-snug">
+                    <span class="text-[#24BB7D] font-extrabold italic ">The Power</span> of Mitochondria,
+                    Are present in every
+                    <span class="font-extrabold italic">human cell.</span>
+                </h2>
+                <p class="text-[#5F5F5F] text-[16px] mb-5 font-medium leading-relaxed">
+                    They not only generate energy but also play an important role in cell proliferation, signaling, etc.
+                </p>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed ">
+                    Mitochondria have unique characteristics that can be delivered into cells through endocytosis. With
+                    PAEAN's mitochondria-based therapeutics, we transform mitochondria into powerful biopharmaceutical
+                    agents to address critical medical needs.
+                </p>
+                <a href="">
+                    <button
+                        class="bg-[#1C74E8] mb-20 md:mb-0 mt-8 text-white px-5 py-3 rounded-lg text-[16px] font-bold">
+                        Learn More The Power of Mitrochondria
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="our-mission-section mt-0 md:mt-10 p-2 md:p-0">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+
+            <div class="h-[450px] md:h-[423px] bg-cover bg-center rounded-2xl flex items-center"
+                style="background-image: url('./assets/images/our-mission-background.svg');">
+
+                <div class="max-w-screen-xl mx-auto px-6 md:px-10 text-center space-y-6">
+
+                    <h2 class="text-[#4795FD] font-bold text-[20px] md:text-[24px]">
+                        Our Technologies
+                    </h2>
+
+                    <p class="text-[#fff] font-semibold text-[24px] md:text-[32px] leading-snug">
+                        Applying the unique characteristics of mitochondria and proprietary technology platform,
+                        <span class="text-[#16B462] font-extrabold">PAEAN</span>
+                        is developing a first-in-class <span
+                            class="text-[#C9C9C9] font-extrabold italic">mitochondria-based</span> pharmaceutical
+                        product that
+                        has a
+                        large
+                        potential to treat various rare diseases and cancer.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-section py-[120px] mt-[-75px] md:mt-0 bg-cover bg-center"
+        style="background-image: url('./assets/images/background-product.svg');">
+
+
+        <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start gap-10">
+
+            <!-- Left -->
+            <div class="left md:w-1/2 space-y-5 mt-10">
+
+                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-semibold leading-snug">
+                    <span class="text-[#24BB7D] font-extrabold  ">MitoTherapy Product</span> <br>Mitochondrial
+                    Transplatation
+                </h2>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                    MitoTherapy Products are novel medicinal products using mitochondria isolated from human stem cells
+                    or human blood. Mitochondria are unique organelles that are responsible for energy production in
+                    cells. Based on our experimental results, mitochondria have a high potential to treat inflammatory
+                    diseases.
+                </p>
+
+            </div>
+
+            <!-- Right -->
+            <div class="kanan md:w-1/2 flex flex-col items-end">
+                <img src="./assets/images/image-product-1.svg" alt="">
+                <a href="">
+                    <button
+                        class="bg-[#1C74E8] relative top-[-40px]  py-[10px] md:top-[-70px] text-white px-[16px] md:px-[43px] md:py-[18px] rounded-xl text-xs md:text-[16px] font-bold flex items-center tracking-wide">
+                        Learn More <i class="ri-arrow-right-long-line mt-1 ml-2 text-xs md:text-xl"></i>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col-reverse md:flex-row items-start gap-10">
+
+            <!-- Left (gambar + button) -->
+            <div class="left md:w-1/2 space-y-5 mt-[-7px] md:mt-10 flex flex-col">
+                <img src="./assets/images/image-product-2.svg" alt="">
+                <a href="" class="self-end">
+                    <button
+                        class="bg-[#1C74E8] relative top-[-60px]  py-[10px] md:top-[-90px] text-white px-[16px] md:px-[43px] md:py-[18px] rounded-xl text-xs md:text-[16px] font-bold flex items-center tracking-wide">
+                        Learn More <i class="ri-arrow-right-long-line mt-1 ml-2 text-xs md:text-xl"></i>
+                    </button>
+                </a>
+            </div>
+
+            <!-- Right (teks) -->
+            <div class="kanan md:w-1/2 space-y-5 mt-10 ">
+                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-semibold leading-snug">
+                    <span class="text-[#24BB7D] font-extrabold">Mitoceutical Product</span> <br class="hidden md:block">
+                    Modified Mitochondrial Transplatation
+                </h2>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                    MitoTherapy Products are novel medicinal products using mitochondria isolated from human stem cells
+                    or human blood. Mitochondria are unique organelles that are responsible for energy production in
+                    cells. Based on our experimental results, mitochondria have a high potential to treat inflammatory
+                    diseases.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start gap-10">
+
+            <!-- Left -->
+            <div class="left md:w-1/2 space-y-5 mt-10">
+
+                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-semibold leading-snug">
+                    <span class="text-[#24BB7D] font-extrabold  ">Mitoaugmentation Product</span> <br>
+                    Mitochondria-augmented <br> Cell Therapy
+                </h2>
+                <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                    MitoTherapy Products are novel medicinal products using mitochondria isolated from human stem cells
+                    or human blood. Mitochondria are unique organelles that are responsible for energy production in
+                    cells. Based on our experimental results, mitochondria have a high potential to treat inflammatory
+                    diseases.
+                </p>
+
+            </div>
+
+            <!-- Right -->
+            <div class="kanan md:w-1/2 flex flex-col items-end">
+                <img src="./assets/images/image-product-3.svg" alt="">
+                <a href="">
+                    <button
+                        class="bg-[#1C74E8] relative top-[-40px]  py-[10px] md:top-[-70px] text-white px-[16px] md:px-[43px] md:py-[18px] rounded-xl text-xs md:text-[16px] font-bold flex items-center tracking-wide">
+                        Learn More <i class="ri-arrow-right-long-line mt-1 ml-2 text-xs md:text-xl"></i>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="our-mission-section p-2 mt-[-70px] mb-20 md:p-0">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+            <div class="h-auto bg-cover bg-center rounded-2xl p-10"
+                style="background-image: url('./assets/images/background-pipeline.svg');">
+
+                <!-- Title -->
+                <div class="text-center space-y-6 mb-10">
+                    <h2 class="text-[#4795FD] font-bold text-[20px] md:text-[24px]">The Pipeline</h2>
+                    <p class="text-[#fff] font-semibold text-[20px] md:text-[28px] leading-snug">
+                        <span class="text-[#24BB7D] font-extrabold italic">PAEAN’s Pipeline</span> reflects our
+                        strategic focus on high-burden diseases with limited treatment options, progressing toward
+                        regulatory
+                        milestones with the support of national and global funding partners.
+                    </p>
+                </div>
+
+                <!-- Table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-white border-separate border-spacing-y-1">
+                        <thead>
+                            <tr class="text-gray-300 text-sm">
+                                <th class="p-5 ">Platform</th>
+                                <th class="p-5">Pipeline</th>
+                                <th class="p-5">Indication</th>
+                                <th class="p-5">Drug Discovery</th>
+                                <th class="p-5">Pre-Clinical</th>
+                                <th class="p-5">IND</th>
+                                <th class="p-5">Phase 1</th>
+                                <th class="p-5">Phase 2</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm">
+                            <!-- Row 1 -->
+                            <tr>
+                                <td class="p-2 text-[18px] font-bold relative left-3 top-[100px] align-top">
+                                    Mitochondrial
+                                    Therapeutics<br>(MitoTherapy)
+                                </td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-101</td>
+                                <td class="p-2 relative left-3">PM/DM</td>
+                                <td colspan="5" class="p-2 ">
+                                    <div class="flex space-x-1 ml-3">
+
+                                        <div
+                                            class="h-[22px] rounded w-[90%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr>
+                                <td class="p-2"></td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-RS</td>
+                                <td class="p-2 relative left-3">Parkinson Disease</td>
+                                <td colspan="5" class="p-2 ">
+                                    <div class="flex space-x-1 ml-3">
+                                        <div
+                                            class="h-[22px] rounded w-[63%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr>
+                                <td class="p-2"></td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-RS</td>
+                                <td class="p-2 relative left-3">Hearing Loss</td>
+                                <td colspan="5" class="p-2">
+                                    <div class="flex space-x-1 ml-3">
+                                        <div
+                                            class="h-[22px] rounded w-[50%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr>
+                                <td class="p-2"></td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-RS</td>
+                                <td class="p-2 relative left-3">Ophthalmic Disease</td>
+                                <td colspan="5" class="p-2">
+                                    <div class="flex space-x-1 ml-3">
+                                        <div
+                                            class="h-[22px] rounded w-[33%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr>
+                                <td class="p-2"></td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-105</td>
+                                <td class="p-2 relative left-3">Separation Kit</td>
+                                <td colspan="5" class="p-2 ">
+                                    <div class="flex space-x-1 ml-3">
+                                        <div
+                                            class="h-[22px] rounded w-[40%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr>
+                                <td class="p-2 relative text-[18px] font-bold ft-3">Modified
+                                    MitoTherapy<br>(Mitaceutical)</td>
+                                <td class="p-2 relative left-3 text-blue-400 font-bold">PN-30X</td>
+                                <td class="p-2 relative left-3">Cancer</td>
+                                <td colspan="5" class="p-2">
+                                    <div class="flex space-x-1 ml-3">
+                                        <div
+                                            class="h-[22px] rounded w-[38%] bg-gradient-to-r from-[#0B54B3] to-[#4D97F7]">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-mission-section mt-0 md:mt-10 p-2 mb-[80px]  md:p-0">
+        <div class="mx-auto w-full" style="max-width:1170px;">
+            <div class="h-auto md:h-[263px] bg-cover bg-center rounded-2xl flex items-center py-10 md:py-0"
+                style="background-image: url('./assets/images/background-intelect.svg');">
+
+                <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-start gap-10">
+
+                    <!-- Left -->
+                    <div class="md:w-1/2 space-y-5">
+                        <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-semibold leading-snug">
+                            Our <span class="text-[#24BB7D] font-extrabold italic">Intellectual</span> Properties
+                        </h2>
+                        <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
+                            PAEAN protects its innovations through a growing portfolio of patents, including granted and
+                            pending filings across Korea, the United States, and other major markets.
+                        </p>
+                    </div>
+
+                    <!-- Right (Stats) -->
+                    <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 md:flex md:justify-end gap-6 md:gap-10">
+                        <div>
+                            <h2 class="text-[#24BB7D] font-extrabold text-[48px] md:text-[64px]">19+</h2>
+                            <p class="text-[#5F5F5F] font-medium text-[16px]">International Patent Applications</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[#24BB7D] font-extrabold text-[48px] md:text-[64px]">14+</h2>
+                            <p class="text-[#5F5F5F] font-medium text-[16px]">Korean Patents Granted</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[#24BB7D] font-extrabold text-[48px] md:text-[64px]">100+</h2>
+                            <p class="text-[#5F5F5F] font-medium text-[16px]">Total Global <br> Filings</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-mission-section mt-0 md:mt-10 mb-[110px]">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-10 text-center space-y-6">
+
+                <h2 class="text-[#4795FD] font-bold text-[20px] md:text-[24px]">
+                    Our Partner
+                </h2>
+
+                <p class="text-[#1D1D1D] font-semibold text-[24px] md:text-[32px] leading-snug">
+                    We <span class="text-[#24BB7D] font-extrabold italic">Collaborate</span> with leading research
+                    institutions, hospitals, and global investors to
+                    <span class="text-[#24BB7D] font-extrabold italic"> Accelerate the Development</span> of
+                    next-generation mitochondrial therapies.
+                </p>
+
+                <!-- Container marquee -->
+                <div class="overflow-hidden relative w-full">
+                    <div class="flex animate-marquee space-x-10 logo-wrap">
+                        <img class="w-[184px]" src="./assets/images/logo 2 - delveInsight.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 3 - bio Intnl.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 4 - concord.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 5 - bioeurope.svg" alt="">
+                        <!-- duplikat biar animasi mulus -->
+                        <img class="w-[184px]" src="./assets/images/logo 2 - delveInsight.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 3 - bio Intnl.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 4 - concord.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo 5 - bioeurope.svg" alt="">
+                    </div>
+
+                    <div
+                        class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-white to-transparent pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-white to-transparent pointer-events-none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-section bg-white text-white py-12 px-6 md:px-16 border border-[#E8E8E8]">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Left -->
+            <div class="left space-y-4">
+                <img src="./assets/images/footer-logo.svg" alt="Logo" class="w-[180px]">
+                <p class="text-[#5F5F5F] text-[15px] font-medium leading-relaxed">
+                    Headquarter : #108SB, DaeduckBiz Center <br>
+                    17 Techno 4-ro, Yuseong-gu, Daejeon 34013, Korea
+                </p>
+                <p class="text-[#5F5F5F] text-[15px] font-medium">
+                    Mail : <a href="mailto:info@paeanbio.com" class="hover:text-[#24BB7D]">info@paeanbio.com</a>
+                </p>
+                <p class="text-[#5F5F5F] text-[15px] font-medium">Phone : 042-334-7378 | Fax : 042-334-7096</p>
+            </div>
+
+            <!-- Center -->
+            <div class="center grid grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Navigation</h2>
+                    <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Other</h2>
+                    <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="right space-y-4">
+                <h2 class="text-lg font-semibold">Subscribe Our News</h2>
+                <div class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Email address"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-400 text-black  outline-none">
+                    <button
+                        class="bg-[#1C74E8] px-5 py-2 rounded-lg font-semibold text-white hover:bg-blue-700 transition">
+                        Subscribe Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full width border top -->
+        <div class="w-full border-t border-[#E8E8E8] relative top-7">
+            <p class="text-center text-[14px] text-[#5F5F5F] mt-2 relative top-2">
+                Copyrights © 2025 All Rights Reserved by
+                <span class=" font-bold text-[#24BB7D]">PAEAN BIOTECHNOLOGY</span>
+            </p>
+        </div>
+
+    </section>
+
+
+
+    <script src=" ./assets/js/homeMain.js">
+    </script>
+</body>
+
+</html>
