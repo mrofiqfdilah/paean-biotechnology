@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paean Biotechnology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar border-b border-[#DEDEDE] relative z-50">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 md:px-20 py-4">
+
+            <div class="left flex-shrink-0">
+                <a href="index.html">
+                    <img src="./assets/images/navbar-logo.svg" alt="Logo" class="h-8">
+                </a>
+            </div>
+
+            <div class="center hidden md:flex flex-grow justify-center">
+                <ul class="flex space-x-6 items-center">
+                    <li class="relative">
+                        <a href="index.html" class="text-[#1D1D1D] font-medium ">
+                            Home
+                        </a>
+                    </li>
+
+                    <li><a href="mitochondria.html" class="text-[#1D1D1D] font-medium">The Power of
+                            Mitochondria</a></li>
+
+                    <li class="relative group">
+                        <a href="based-platform.html"
+                            class="relative text-[#1C74E8] font-semibold pb-[26px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-2 after:border-[#1C74E8]">
+                            Mitochondria based Platform
+                            <i class="ri-arrow-down-s-line ml-1 text-[#1C74E8] text-lg"></i>
+                        </a>
+
+                        <ul
+                            class="absolute left-1/2 top-full hidden group-hover:flex bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 border border-gray-200 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50">
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Mitochondrial
+                                    Transplantation</a>
+                            </li>
+                            <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Modified Mitochondrial
+                                    Transplantation</a>
+                            </li>
+                            <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>
+                            <li>
+                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Modified Mitochondria
+                                    Augmented - Cell Therapy</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><a href="news-room.html" class="text-[#1D1D1D] font-medium">Newsroom</a></li>
+                </ul>
+            </div>
+
+            <div class="right hidden md:flex items-center space-x-4">
+                <div class="flex items-center space-x-2 text-sm">
+                    <p class="eng-lag cursor-pointer font-semibold text-[#1D1D1D]">ENG</p>
+                    <p>|</p>
+                    <p class="kor-lag cursor-pointer font-medium text-[#929292]">KOR</p>
+                </div>
+                <a href="">
+                    <button
+                        class="bg-[#fff] font-bold text-[#1D1D1D] px-4 py-2 rounded-lg border-[1.5px] border-[#1D1D1D] transition text-sm">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+
+            <button id="burger" class="md:hidden text-2xl text-[#1D1D1D]">
+                <i id="burgerIcon" class="ri-menu-line"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <div id="mobileMenu"
+        class="hidden md:hidden absolute top-[64px] left-0 w-full bg-white border-t border-[#DEDEDE] z-50">
+        <ul class="flex flex-col space-y-4 p-6 text-[#1D1D1D] font-medium">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mitochondria.html">The Power of Mitochondria</a></li>
+            <li class="font-semibold"><a href="based-platform.html">Mitochondria based Platform</a></li>
+            <ul class="ml-4 space-y-2 text-sm">
+                <li><a href="">Mitochondrial Transplantation</a></li>
+                <li><a href="">Modified Mitochondrial Transplantation</a></li>
+                <li><a href="">Modified Mitochondria Augmented - Cell Therapy</a></li>
+            </ul>
+            <li><a href="news-room.html">Newsroom</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li class="flex space-x-2">
+                <p class="font-semibold">ENG</p>
+                <p>|</p>
+                <p class="text-[#929292]">KOR</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <section class="hero-section mt-[-100px] md:mt-0 bg-cover bg-center"
+        style="background-image: url('./assets/images/background-Mitochondria.svg');">
+        <div class="mx-auto w-full" style="max-width:1200px;">
+
+            <div class="h-screen md:h-[485px]  rounded-2xl flex items-center">
+
+                <div class="max-w-screen-xl mx-auto flex items-center justify-between px-8 md:px-10">
+
+                    <div class="left w-full md:max-w-[700px] flex-none">
+                        <h1 class="text-[43px] font-medium leading-tight text-[#1D1D1D] mb-4">
+                            Mitochondrial <span class="text-[#24BB7D] font-extrabold italic">Transplatation</span>
+                        </h1>
+                        <p class="text-[20px] text-[#535353] mb-6">
+                            MitoTherapy Products are novel medicinal products using mitochondria isolated from human
+                            stem cells or human blood. Mitochondria are unique organelles that are responsible for
+                            energy production in cells. Based on our experimental results, mitochondria have a high
+                            potential to treat inflammatory diseases.
+                        </p>
+
+                    </div>
+
+                    <!-- Right -->
+                    <div class="hidden md:block right flex-shrink-0 mt-20 ml-[-100px]">
+                        <img src="./assets/images/image-hero.svg" alt="" class="w-[630px]">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="celss-section bg-cover bg-center flex items-center justify-center py-16 mt-20"
+        style="background-image: url('./assets/images/celss-background.svg');">
+        <div class="center text-center " style="max-width: 1168px;">
+            <h2 class="font-semibold text-[32px] text-[#1D1D1D]">
+                Mitochondria <span class="font-extrabold italic text-[#24BB7D]">Uptake</span> in Cells
+            </h2>
+            <p class="text-[20px] w-[830px] mx-auto font-medium text-[#5F5F5F] mt-4">
+                Mitochondria, when introduced into a cell from the outside,
+                can be actively internalized through a process
+                called macropinocytosis, allowing them to integrate and influence cellular function.
+            </p>
+
+            <img src="./assets/images/cells-image.svg" alt="" class="relative top-[60px] ">
+        </div>
+    </section>
+
+    <section class="advantages-section bg-cover bg-center py-16 mt-20"
+        style="background-image: url('./assets/images/advantages-background.svg');">
+
+        <!-- Judul -->
+        <h2 class="text-[26px] italic font-extrabold text-[#16B462] text-left max-w-6xl mx-auto">
+            Advantages of Mitochondrial Transplantation
+        </h2>
+        <p class="text-[26px] font-medium text-[#1D1D1D] text-left mb-12 max-w-6xl mx-auto">
+            Unlocking Cellular Recovery Through Advanced MitoTherapy
+        </p>
+
+        <!-- Grid 2 kolom -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+            <!-- Box 1 -->
+            <div class="flex items-start gap-6">
+                <div
+                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-atp.svg" class="w-[100px]" alt="">
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Increasing ATP Production</h2>
+                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
+                        Transplanted mitochondria help restore the cell’s energy powerhouse,
+                        significantly enhancing ATP levels vital for cell survival and function.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="flex items-start gap-6">
+                <div
+                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-immunogenicity.svg" class="w-[100px]" alt="">
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">No Immunogenicity</h2>
+                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
+                        s mitochondria can be autologous (sourced from the patient), they are naturally accepted by the
+                        immune system, minimizing rejection risk.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="flex items-start gap-6">
+                <div
+                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-function.svg" class="w-[100px]" alt="">
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Improving Mitochondrial Function</h2>
+                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
+                        Healthy mitochondria replace or support damaged ones, revitalizing cellular metabolism and
+                        restoring critical biochemical pathways.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="flex items-start gap-6">
+                <div
+                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-ros.svg" class="w-[100px]" alt="">
+                </div>
+                <div class="mt-5">
+                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Attenuating ROS Level and Inflammation</h2>
+                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
+                        Mitochondrial transfer helps reduce oxidative stress and inflammation by lowering reactive
+                        oxygen species (ROS) levels in damaged cells.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="preparing-section py-16">
+        <!-- Judul -->
+        <h2 class="text-[32px] font-semibold text-[#1D1D1D] text-center mb-12">
+            Preparing <span class="text-[#16B462] font-extrabold italic">Mitochondria</span> for Therapeutic Use
+        </h2>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
+
+            <!-- Left: Menu -->
+            <div class="flex flex-col gap-6 ml-5">
+                <button
+                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#16B462] border-[#16B462] text-[#16B462] font-semibold"
+                    data-tab="banking">
+                    Stem Cells Banking
+                </button>
+                <button
+                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    data-tab="cultivation">
+                    Stem Cells Cultivation
+                </button>
+                <button
+                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    data-tab="isolation">
+                    Isolation of Mitochondria
+                </button>
+                <button
+                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    data-tab="formulation">
+                    Formulation
+                </button>
+            </div>
+
+            <!-- Center: Image -->
+            <div class="flex justify-center">
+                <img id="tab-image" src="./assets/images/preparing-image.svg" alt=""
+                    class="w-[350px] h-[350px] rounded-xl object-cover fade">
+            </div>
+
+            <!-- Right: Content -->
+            <div>
+                <h2 id="tab-title" class="text-[24px] font-bold text-[#1D1D1D] fade">
+                    Stem Cells Banking
+                </h2>
+                <p id="tab-desc" class="text-[20px] font-medium text-[#5F5F5F] mt-4 fade">
+                    High-quality stem cells are securely preserved under optimal conditions.
+                    This ensures availability for future therapeutic applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Style Fade -->
+    <style>
+        .fade {
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-out {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    </style>
+
+    <!-- Script -->
+    <script>
+        const tabs = {
+            banking: {
+                title: "Stem Cells Banking",
+                desc: "High-quality stem cells are securely preserved under optimal conditions. This ensures availability for future therapeutic applications.",
+                img: "./assets/images/preparing-image.svg"
+            },
+            cultivation: {
+                title: "Stem Cells Cultivation",
+                desc: "Stem cells are carefully grown in controlled environments, ensuring stability and readiness for therapeutic use.",
+                img: "./assets/images/preparing-image.svg"
+            },
+            isolation: {
+                title: "Isolation of Mitochondria",
+                desc: "Healthy mitochondria are isolated with precision techniques to guarantee functionality and viability.",
+                img: "./assets/images/preparing-image.svg"
+            },
+            formulation: {
+                title: "Formulation",
+                desc: "Mitochondria are prepared into specific formulations suitable for delivery in therapeutic applications.",
+                img: "./assets/images/preparing-image.svg"
+            }
+        };
+
+        const btns = document.querySelectorAll(".tab-btn");
+        const title = document.getElementById("tab-title");
+        const desc = document.getElementById("tab-desc");
+        const img = document.getElementById("tab-image");
+
+        function updateContent(tab) {
+            // Tambahin fade-out
+            [title, desc, img].forEach(el => el.classList.add("fade-out"));
+
+            setTimeout(() => {
+                title.textContent = tab.title;
+                desc.textContent = tab.desc;
+                img.src = tab.img;
+
+                // Hapus fade-out biar muncul lagi dengan fade-in
+                [title, desc, img].forEach(el => el.classList.remove("fade-out"));
+            }, 300); // delay supaya animasi smooth
+        }
+
+        btns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                btns.forEach(b => {
+                    b.classList.remove("text-[#16B462]", "font-semibold", "border-[#16B462]");
+                    b.classList.add("text-[#5F5F5F]", "border-[#E5E5E5]");
+                });
+
+                btn.classList.add("text-[#16B462]", "font-semibold", "border-[#16B462]");
+                btn.classList.remove("text-[#5F5F5F]", "border-[#E5E5E5]");
+
+                const tab = tabs[btn.dataset.tab];
+                updateContent(tab);
+            });
+        });
+    </script>
+
+    <section class="footer-section bg-white mt-10 text-white py-12 px-6 md:px-16 border border-[#E8E8E8]">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Left -->
+            <div class="left space-y-4">
+                <img src="./assets/images/footer-logo.svg" alt="Logo" class="w-[180px]">
+                <p class="text-[#5F5F5F] text-[15px] font-medium leading-relaxed">
+                    Headquarter : #108SB, DaeduckBiz Center <br>
+                    17 Techno 4-ro, Yuseong-gu, Daejeon 34013, Korea
+                </p>
+                <p class="text-[#5F5F5F] text-[15px] font-medium">
+                    Mail : <a href="mailto:info@paeanbio.com" class="hover:text-[#24BB7D]">info@paeanbio.com</a>
+                </p>
+                <p class="text-[#5F5F5F] text-[15px] font-medium">Phone : 042-334-7378 | Fax : 042-334-7096</p>
+            </div>
+
+            <!-- Center -->
+            <div class="center grid grid-cols-2 gap-6">
+                <div>
+                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Navigation</h2>
+                    <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Other</h2>
+                    <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="right space-y-4">
+                <h2 class="text-lg font-semibold">Subscribe Our News</h2>
+                <div class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Email address"
+                        class="w-full px-4 py-2 rounded-lg border border-gray-400 text-black  outline-none">
+                    <button
+                        class="bg-[#1C74E8] px-5 py-2 rounded-lg font-semibold text-white hover:bg-blue-700 transition">
+                        Subscribe Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full width border top -->
+        <div class="w-full border-t border-[#E8E8E8] relative top-7">
+            <p class="text-center text-[14px] text-[#5F5F5F] mt-2 relative top-2">
+                Copyrights © 2025 All Rights Reserved by
+                <span class=" font-bold text-[#24BB7D]">PAEAN BIOTECHNOLOGY</span>
+            </p>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

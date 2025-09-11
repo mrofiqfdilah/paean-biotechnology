@@ -18,6 +18,18 @@ body {
     animation: marquee 20s linear infinite;
 }
 
+.swiper-pagination-bullet {
+    background: white !important;
+    /* titik warna putih */
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+    /* titik aktif warna biru */
+    opacity: 1;
+}
+
 th {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
 }
