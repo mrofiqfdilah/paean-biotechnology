@@ -52,21 +52,20 @@
                         </a>
                     </li>
 
-                    <li class="relative group">
-                        <a href="based-platform.html">
-                            <button class="text-[#1D1D1D] font-medium flex items-center">
-                                Mitochondria based Platform
-                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
+                    <li class="relative">
+                        <a href="#" id="dropdownToggle"
+                            class="relative text-[#1D1D1D] font-medium cursor-pointer flex items-center space-x-1">
+                            <span>Mitochondria based Platform</span>
+                            <i id="dropdownIcon"
+                                class="ri-arrow-down-s-line text-[#1C74E8] text-lg transition-transform duration-300"></i>
                         </a>
 
-                        <ul
-                            class="absolute left-1/2 top-full hidden group-hover:flex bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 border border-gray-200 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50">
+                        <!-- Dropdown -->
+                        <ul id="dropdownMenu"
+                            class="absolute left-1/2 top-full opacity-0 scale-95 transition-all duration-300 origin-top bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50 pointer-events-none">
                             <li>
-                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Mitochondrial
+                                <a href="./based-platform.html"
+                                    class="text-[16px] text-[#fff] font-semibold">Mitochondrial
                                     Transplantation</a>
                             </li>
                             <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>

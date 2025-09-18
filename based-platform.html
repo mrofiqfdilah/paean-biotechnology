@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="navbar border-b border-[#DEDEDE] relative z-50">
@@ -39,17 +41,20 @@
                     <li><a href="mitochondria.html" class="text-[#1D1D1D] font-medium">The Power of
                             Mitochondria</a></li>
 
-                    <li class="relative group">
-                        <a href="based-platform.html"
+                    <li class="relative">
+                        <a href="" id="dropdownToggle"
                             class="relative text-[#1C74E8] font-semibold pb-[26px] after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:border-b-2 after:border-[#1C74E8]">
-                            Mitochondria based Platform
-                            <i class="ri-arrow-down-s-line ml-1 text-[#1C74E8] text-lg"></i>
+                            <span>Mitochondria based Platform</span>
+                            <i id="dropdownIcon"
+                                class="ri-arrow-down-s-line text-[#1C74E8] text-lg transition-transform duration-300"></i>
                         </a>
 
-                        <ul
-                            class="absolute left-1/2 top-full hidden group-hover:flex bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 border border-gray-200 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50">
+                        <!-- Dropdown -->
+                        <ul id="dropdownMenu"
+                            class="absolute left-1/2 top-full opacity-0 scale-95 transition-all duration-300 origin-top bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50 pointer-events-none">
                             <li>
-                                <a href="#" class="text-[16px] text-[#fff] font-semibold">Mitochondrial
+                                <a href="./based-platform.html"
+                                    class="text-[16px] text-[#fff] font-semibold">Mitochondrial
                                     Transplantation</a>
                             </li>
                             <li><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse block"></span></li>
@@ -427,6 +432,7 @@
     </section>
 
 
+    <script src="./assets/js/homeMain.js"></script>
 </body>
 
 </html>
