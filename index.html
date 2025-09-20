@@ -225,7 +225,7 @@
         <div class="mx-auto w-full">
 
             <div class="h-[450px] md:h-[547px]  bg-cover bg-center  flex items-center"
-                style="background-image: url('./assets/images/our-mission-background-2.svg');">
+                style="background-image: url('./assets/images/our-mission-background-3.svg');">
 
                 <div class="max-w-screen-xl mx-auto px-6 md:px-10 text-center space-y-6">
 
@@ -233,15 +233,16 @@
                         OUR MISSION
                     </h2>
 
-                    <p class="text-[#fff] font-semibold text-[24px] md:text-[32px] leading-snug">
-                        Our mission is to revolutionize healthcare
+                    <p class="text-[#1D1D1D] font-semibold text-[24px] md:text-[32px] leading-snug">
+                        <span class="text-[#1D1D1D] font-bold">Our mission is to revolutionize healthcare</span>
                         <br>
-                        <span class="text-[#AAAAAA]">by harnessing the untapped potential of mitochondria.</span>
+                        by harnessing the untapped <span class="text-[#1D1D1D] font-bold">potential</span> of
+                        mitochondria.</span>
                     </p>
 
                     <!-- pakai max-w + mx-auto biar center dan responsive -->
                     <p
-                        class="text-[#A6A6A6] font-medium text-[16px] md:text-[20px] max-w-[873px] mx-auto leading-relaxed">
+                        class="text-[#5F5F5F] font-medium text-[16px] md:text-[20px] max-w-[873px] mx-auto leading-relaxed">
                         We are committed to advancing mitochondria-based technologies to develop
                         innovative therapies for rare, chronic, and hard-to-treat diseases—improving quality of life
                         through science-driven breakthroughs.
@@ -253,17 +254,15 @@
     </section>
 
     <section class="our-values-section py-[120px] mt-[-100px] md:mt-0 bg-cover bg-center"
-        style="background-image: url('./assets/images/our-values-background.svg');">
+        style="background-image: url('./assets/images/our-values-background-2.svg');">
         <div class="max-w-screen-xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-start gap-10">
-
 
             <!-- Left -->
             <div class="left md:w-1/2 space-y-5 mt-10">
                 <p class="text-[#1C74E8] font-bold text-[24px]">OUR VALUES</p>
                 <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] font-medium leading-snug">
-                    <span class="text-[#1D1D1D] font-extrabold  ">At PAEAN</span>, we are driven by values that shape
-                    our
-                    <span class="font-extrabold italic ">science</span> and
+                    <span class="text-[#1D1D1D] font-extrabold">At PAEAN</span>, we are driven by values that shape
+                    our <span class="font-extrabold italic">science</span> and
                     <span class="font-extrabold italic">spirit.</span>
                 </h2>
                 <p class="text-[#5F5F5F] text-[16px] font-medium leading-relaxed">
@@ -278,45 +277,48 @@
 
             <!-- Right -->
             <div class="kanan md:w-1/2">
-                <!-- tambahin text-center biar isi box gampang rata tengah -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center text-center">
+                <!-- 📱 Mobile: grid 2 kolom | 💻 Desktop: flex wrap -->
+                <div class="grid grid-cols-2 gap-6 text-center
+                md:flex md:flex-wrap md:justify-center md:gap-10">
 
                     <!-- Box 1 -->
-                    <div class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] rounded-xl flex flex-col items-center justify-center bg-cover bg-center"
-                        style="background-image: url('./assets/images/values-box-background.svg');">
-
-                        <img src="./assets/images/innovatif-icon.svg" class="mb-3 w-[100px]" alt="">
-                        <h2 class="text-[20px] text-white font-semibold">Innovative</h2>
+                    <div class="box p-10 w-full md:w-[220px] h-[155px] md:h-[195px] border border-[#DEDEDE] rounded-3xl
+            flex flex-col items-center justify-center
+            bg-[linear-gradient(to_bottom,_#F1F4FD_0%,_#F1F4FD_70%,_#BCD4F6_100%)]">
+                        <img src="./assets/images/innovatif-icon-2.svg" class="mb-3 w-[80px] md:w-[100px]" alt="">
+                        <h2 class="text-[16px] md:text-[20px] text-[#1D1D1D] font-semibold">Innovative</h2>
                     </div>
 
-
                     <!-- Box 2 -->
-                    <!-- Box 2 -->
-                    <div class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] rounded-xl flex flex-col items-center justify-center bg-cover bg-center"
-                        style="background-image: url('./assets/images/values-box-background.svg');">
-                        <img src="./assets/images/collaborative-icon.svg" class="mb-3 w-[100px]" alt="">
-                        <h2 class="text-[20px] text-white font-semibold">Collaborative</h2>
+                    <div class="box p-10 w-full md:w-[220px] h-[155px] md:h-[195px]  border border-[#DEDEDE] rounded-3xl
+            flex flex-col items-center justify-center
+            bg-[linear-gradient(to_bottom,_#F1F4FD_0%,_#F1F4FD_70%,_#BCD4F6_100%)]">
+                        <img src="./assets/images/collaborative-icon-2.svg" class="mb-3 w-[80px] md:w-[100px]" alt="">
+                        <h2 class="text-[16px] md:text-[20px] text-[#1D1D1D] font-semibold">Collaborative</h2>
                     </div>
 
                     <!-- Box 3 -->
-                    <div class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] rounded-xl flex flex-col items-center justify-center bg-cover bg-center"
-                        style="background-image: url('./assets/images/values-box-background.svg');">
-                        <img src="./assets/images/technology-icon.svg" class="mb-3 w-[100px]" alt="">
-                        <h2 class="text-[20px] text-white font-semibold">Technology</h2>
+                    <div class="box p-10 w-full md:w-[220px] h-[155px] md:h-[195px] border border-[#DEDEDE] rounded-3xl
+            flex flex-col items-center justify-center
+            bg-[linear-gradient(to_bottom,_#F1F4FD_0%,_#F1F4FD_70%,_#BCD4F6_100%)]">
+                        <img src="./assets/images/technology-icon-2.svg" class="mb-3 w-[80px] md:w-[100px]" alt="">
+                        <h2 class="text-[16px] md:text-[20px] text-[#1D1D1D] font-semibold">Technology</h2>
                     </div>
 
                     <!-- Box 4 -->
-                    <div class="box mx-auto p-10 w-[220px] h-[195px] border border-[#DEDEDE] rounded-xl flex flex-col items-center justify-center bg-cover bg-center"
-                        style="background-image: url('./assets/images/values-box-background.svg');">
-                        <img src="./assets/images/rigo-icon.svg" class="mb-3 w-[100px]" alt="">
-                        <h2 class="text-[20px] text-white font-semibold">Rigorous</h2>
+                    <div class="box p-10 w-full md:w-[220px] h-[155px] md:h-[195px] border border-[#DEDEDE] rounded-3xl
+            flex flex-col items-center justify-center
+            bg-[linear-gradient(to_bottom,_#F1F4FD_0%,_#F1F4FD_70%,_#BCD4F6_100%)]">
+                        <img src="./assets/images/rigo-icon-2.svg" class="mb-3 w-[80px] md:w-[100px]" alt="">
+                        <h2 class="text-[16px] md:text-[20px] text-[#1D1D1D] font-semibold">Rigorous</h2>
                     </div>
+
                 </div>
             </div>
 
-
         </div>
     </section>
+
 
     <section class="understading-section mt-[-100px] md:mt-0 bg-cover bg-center"
         style="background-image: url('./assets/images/background-understanding.svg');">

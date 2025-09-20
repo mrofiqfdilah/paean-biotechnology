@@ -1,57 +1,82 @@
-const burger = document.getElementById("burger");
+// ========================================================
+//  MOBILE NAVIGATION  –  BURGER / CLOSE ICON TOGGLE
+// ========================================================
+
+// Cache DOM references once for performance.
+// Using explicit names keeps intent clear in large codebases.
+const burgerButton = document.getElementById("burger");
 const burgerIcon = document.getElementById("burgerIcon");
 const mobileMenu = document.getElementById("mobileMenu");
 
-burger.addEventListener("click", () => {
+// Handle burger button click.
+// Toggling a single utility class keeps re-render cost low
+// and leverages Tailwind's "hidden" for display control.
+burgerButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 
-    // Toggle ikon antara burger dan close
-    if (mobileMenu.classList.contains("hidden")) {
-        burgerIcon.classList.remove("ri-close-line");
-        burgerIcon.classList.add("ri-menu-line");
-    } else {
-        burgerIcon.classList.remove("ri-menu-line");
-        burgerIcon.classList.add("ri-close-line");
-    }
+    // Update the icon to reflect the new menu state.
+    // We avoid re-rendering the DOM; only classes change.
+    const menuIsHidden = mobileMenu.classList.contains("hidden");
+    burgerIcon.classList.toggle("ri-menu-line", menuIsHidden);
+    burgerIcon.classList.toggle("ri-close-line", !menuIsHidden);
 });
 
 
-const toggle = document.getElementById("dropdownToggle");
-const menu = document.getElementById("dropdownMenu");
-const icon = document.getElementById("dropdownIcon");
+// ========================================================
+//  DROPDOWN MENU  –  ACCESSIBLE TOGGLE WITH ANIMATION
+// ========================================================
 
-toggle.addEventListener("click", function (e) {
+// DOM references for the dropdown system.
+const dropdownToggle = document.getElementById("dropdownToggle");
+const dropdownMenu = document.getElementById("dropdownMenu");
+const dropdownIcon = document.getElementById("dropdownIcon");
+
+// Keep animation duration in sync with the CSS transition.
+// Centralizing the value avoids "magic numbers".
+const ANIMATION_MS = 300;
+
+/**
+ * Opens the dropdown with a smooth transition.
+ * We remove "pointer-events-none" so the menu becomes interactive
+ * and apply utility classes for opacity/scale animation.
+ */
+function openDropdown() {
+    dropdownMenu.classList.remove("pointer-events-none", "opacity-0", "scale-95");
+    dropdownMenu.classList.add("flex", "opacity-100", "scale-100");
+    dropdownIcon.classList.add("rotate-180");
+}
+
+/**
+ * Closes the dropdown while preserving the exit animation.
+ * Pointer events are disabled *after* the animation completes
+ * to avoid abrupt clicks during the transition.
+ */
+function closeDropdown() {
+    dropdownMenu.classList.add("opacity-0", "scale-95");
+    dropdownMenu.classList.remove("opacity-100", "scale-100");
+    dropdownIcon.classList.remove("rotate-180");
+
+    setTimeout(() => {
+        dropdownMenu.classList.remove("flex");
+        dropdownMenu.classList.add("pointer-events-none");
+    }, ANIMATION_MS);
+}
+
+// Toggle dropdown on button click.
+// Prevent default stops a <button> or <a> from submitting or navigating.
+dropdownToggle.addEventListener("click", (e) => {
     e.preventDefault();
-
-    if (menu.classList.contains("pointer-events-none")) {
-        // buka dropdown
-        menu.classList.remove("pointer-events-none");
-        menu.classList.add("flex", "opacity-100", "scale-100");
-        menu.classList.remove("opacity-0", "scale-95");
-        icon.classList.add("rotate-180");
-    } else {
-        // tutup dropdown dengan animasi
-        menu.classList.add("opacity-0", "scale-95");
-        menu.classList.remove("opacity-100", "scale-100");
-        icon.classList.remove("rotate-180");
-        // tunggu animasi selesai, baru disable pointer
-        setTimeout(() => {
-            menu.classList.remove("flex");
-            menu.classList.add("pointer-events-none");
-        }, 300); // durasi harus sama dengan transition
-    }
+    const isClosed = dropdownMenu.classList.contains("pointer-events-none");
+    isClosed ? openDropdown() : closeDropdown();
 });
 
-// Klik di luar → tutup
-document.addEventListener("click", function (e) {
-    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-        menu.classList.add("opacity-0", "scale-95");
-        menu.classList.remove("opacity-100", "scale-100");
-        icon.classList.remove("rotate-180");
-        setTimeout(() => {
-            menu.classList.remove("flex");
-            menu.classList.add("pointer-events-none");
-        }, 300);
+// Close dropdown when clicking anywhere outside.
+// Using "contains" ensures clicks on nested children are ignored.
+document.addEventListener("click", (e) => {
+    const clickedInside =
+        dropdownToggle.contains(e.target) || dropdownMenu.contains(e.target);
+
+    if (!clickedInside && !dropdownMenu.classList.contains("pointer-events-none")) {
+        closeDropdown();
     }
 });
-
