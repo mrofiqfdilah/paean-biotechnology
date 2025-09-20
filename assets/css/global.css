@@ -12,6 +12,24 @@ body {
     }
 }
 
+@keyframes pulse-green {
+
+    0%,
+    100% {
+        box-shadow: 0 0 4px #24BB7D, 0 0 8px #24BB7D;
+        opacity: 1;
+    }
+
+    50% {
+        box-shadow: 0 0 8px #24BB7D, 0 0 12px #24BB7D;
+        opacity: 0.85;
+    }
+}
+
+.animate-pulse-green {
+    animation: pulse-green 1.8s infinite;
+}
+
 .animate-marquee {
     display: flex;
     width: max-content;

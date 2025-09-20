@@ -125,47 +125,59 @@
     </div>
 
     <section class="hero-section mt-0 md:mt-10">
-        <div class="mx-auto w-full" style="max-width:1200px;">
+        <div class="mx-auto p-4 md:p-0 w-full max-w-[1200px]">
 
-            <div class="h-screen md:h-[485px] bg-cover bg-center rounded-2xl flex items-center"
-                style="background-image: url('./assets/images/background-hero.svg');">
+            <!-- Mobile: background-hero-hp.svg | Desktop: background-hero.svg -->
+            <div class="
+      h-auto pt-6 md:pt-0 md:h-[485px]
+      bg-cover bg-center rounded-2xl flex items-center
+      bg-[url('./assets/images/background-hero-hp.svg')]
+      md:bg-[url('./assets/images/background-hero.svg')]
+    ">
 
-                <div class="max-w-screen-xl mx-auto flex items-center justify-between px-8 md:px-10">
+                <div class="max-w-screen-xl mx-auto flex items-start md:items-center justify-between px-5 md:px-10">
+
 
                     <div class="left w-full md:max-w-[700px] flex-none">
-                        <h1 class="text-[38.5px] font-medium leading-tight text-[#1D1D1D] mb-4">
+                        <h1 class="text-[24px] md:text-[38.5px] font-medium leading-tight text-[#1D1D1D] mb-4">
                             Revolutionizing Healthcare <br>
-                            Through <span class="font-bold">Mitochondrial </span> Innovation
+                            Through <span class="font-bold">Mitochondrial</span> Innovation
                         </h1>
-                        <p class="text-[20px] text-[#535353] mb-6">
+                        <p class="text-[16px] md:text-[20px] text-[#535353] mb-6">
                             We develop next-generation mitochondrial therapeutics to treat
                             rare diseases and cancer—bridging science, innovation, and impact!
                         </p>
-                        <div class="block md:flex space-x-4">
-                            <a href="">
+                        <div class="block md:flex md:space-x-4">
+                            <!-- Tombol 1 -->
+                            <a href="" class="block w-full md:w-auto">
                                 <button
-                                    class="bg-[#1C74E8] mb-5 md:mb-0 text-white px-5 py-3 rounded-lg text-[16px] font-bold">
+                                    class="w-full bg-[#1C74E8] mb-5 md:mb-0 text-white px-5 py-3 rounded-lg text-[16px] font-bold">
                                     Discover Our Technology
                                 </button>
                             </a>
-                            <a href="">
+
+                            <!-- Tombol 2 -->
+                            <a href="" class="block w-full md:w-auto">
                                 <button style="border:1.5px solid #1C74E8"
-                                    class="ml-[-15px] md:ml-0  bg-transparent text-[#1C74E8] px-5 py-3 rounded-lg text-[16px] font-bold">
+                                    class="w-full bg-transparent text-[#1C74E8] px-5 py-3 rounded-lg text-[16px] font-bold">
                                     Connect With Us
                                 </button>
                             </a>
                         </div>
+
                     </div>
 
                     <!-- Right -->
-                    <div class="hidden md:block right flex-shrink-0 mt-40 ml-[-170px]">
-                        <img src="./assets/images/image-hero.svg" alt="" class="w-[700px]">
+                    <div
+                        class=" md:block right flex-shrink-0 mt-[300px] top-20 md:top-0 md:mt-40 relative left-[-330px]  md:left-0 md:ml-[-170px]">
+                        <img src="./assets/images/image-hero.svg" alt="" class="w-[348px] md:w-[700px]">
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="about-section px-6 md:px-20 py-14 text-center mt-0 md:mt-20">
         <p class="text-[#1C74E8] font-bold text-[24px] mb-3">ABOUT US</p>
@@ -624,6 +636,335 @@
         </div>
     </section>
 
+    <section class="relative bg-white mb-20  py-16 
+    bg-[url('./assets/images/milestone-background.svg')] 
+    bg-no-repeat bg-center bg-cover">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Judul -->
+            <p class="text-[24px] font-bold text-[#1C74E8] text-center">MILESTONE</p>
+            <h2 class="text-[32px] font-semibold text-[#1D1D1D] text-center ">
+                <span class="font-extrabold italic">Milestones</span> That Shape
+                <span class="font-extrabold italic">Our Journey</span>, From scientific <br>
+                breakthroughs to clinical progress, we build step by step.
+            </h2>
+
+            <div class="relative mt-16">
+
+                <div class="absolute left-1/2 top-0 bottom-0 w-[5px] bg-[#DEDEDE]/40 -translate-x-1/2"></div>
+
+                <div class="grid grid-cols-2 gap-y-5 relative">
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-1.svg" class="w-[70px] shrink-0" alt="">
+                                <div class="mt-2">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Research Collaboration</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Seoul National University Hospital
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    2018 <br> Until Now
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+                    <div class="flex justify-start pl-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-234.svg" class="w-[70px] mt-2 shrink-0" alt="">
+                                <div class="mt-1">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Pre-series A Funding</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Korea Investment Partners with KRW 1.5 B
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    JUN 2018
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-12 right-[552px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-234.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-0">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Series A Funding</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Korea Investment Partners, Hana Ventures, Timefolio with KRW 6 B
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    Jun 2019
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-start pl-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-234.svg" class="w-[70px] mt-2 shrink-0" alt="">
+                                <div class="mt-0">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Bridge Funding</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Korea Investment Partners, Hana Ventures Timefolio with KRW 4.5 B
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    JUN 2021
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-12 right-[552px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-5.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-4">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Mitochondria GMP Facility</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Jung-gu, Seoul
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    JUN 2021
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+
+                    <div></div>
+
+                    <div class="flex justify-start pl-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-6.svg" class="w-[70px] mt-2 shrink-0" alt="">
+                                <div class="mt-0">
+                                    <h3 class="font-bold text-[17.50px] text-[#1D1D1D]">PN-101 Phase 1/2a IND Approval
+                                    </h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        World-first allogenic mitochondria as therapeutic agent
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    JUN 2021
+                                </p>
+                            </div>
+                        </div>
+                        <span
+                            class="absolute top-12 right-[552px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-1.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-1">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Research Collaboration</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        MOU with Soonchunhyang
+                                        University Medical Center and SIMS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    SEP 2021 <br>
+                                    Until Now
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-start pl-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-234.svg" class="w-[70px] mt-4 shrink-0" alt="">
+                                <div class="mt-0">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Series B Funding
+                                    </h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        Daol Investment, Hana Ventures,
+                                        Timefolio, IMM Investment with KRW 7 B
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    SEP 2022
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-12 right-[552px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-1.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-4">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">Research Collaboration</h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        MOU with YiPSCELL
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    DEC 2022 <br>
+                                    Until Now
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-start pl-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-7.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-3">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">PN-101 Phase 1/2a Completed
+                                    </h3>
+                                    <p class="text-[#5F5F5F] text-[16px] font-semibold">
+                                        NCT04976140
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    JUN 2021 <br>
+                                    until <br>
+                                    JUN 2024
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-12 right-[552px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                    <div></div>
+
+                    <div class="flex justify-end pr-9 relative">
+                        <div class="flex border border-[#DEDEDE] rounded-xl shadow overflow-hidden">
+                            <div class="bg-white p-3 w-[380px] flex items-start gap-4">
+                                <img src="./assets/images/milestone-6.svg" class="w-[70px] mt-1 shrink-0" alt="">
+                                <div class="mt-6">
+                                    <h3 class="font-bold text-[18px] text-[#1D1D1D]">PN-101 Phase 2 IND Approval</h3>
+                                </div>
+                            </div>
+                            <div class="w-px bg-[#DEDEDE]"></div>
+                            <div class="bg-transparent flex items-center justify-center w-[110px] text-left">
+                                <p class="text-[17px] text-[#1D1D1D] font-bold leading-tight">
+                                    FEB 2025
+                                </p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="absolute top-8 right-[-8px] w-4 h-4 bg-[#24BB7D] rounded-full shadow-[0_0_6px_#24BB7D] animate-pulse-green">
+                        </span>
+                    </div>
+
+                    <div></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="our-mission-section mt-0 md:mt-10 p-2 mb-[80px]  md:p-0">
         <div class="mx-auto w-full" style="max-width:1170px;">
@@ -682,15 +1023,17 @@
                 <!-- Container marquee -->
                 <div class="overflow-hidden relative w-full mt-6">
                     <div class="flex animate-marquee space-x-10 logo-wrap">
-                        <img class="w-[184px]" src="./assets/images/logo 2 - delveInsight.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 3 - bio Intnl.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 4 - concord.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 5 - bioeurope.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-1.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-2.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-3.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-4.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-5.svg" alt="">
                         <!-- duplikat biar animasi mulus -->
-                        <img class="w-[184px]" src="./assets/images/logo 2 - delveInsight.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 3 - bio Intnl.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 4 - concord.svg" alt="">
-                        <img class="w-[184px]" src="./assets/images/logo 5 - bioeurope.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-1.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-2.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-3.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-4.svg" alt="">
+                        <img class="w-[184px]" src="./assets/images/logo-marquee-5.svg" alt="">
                     </div>
 
                     <div
