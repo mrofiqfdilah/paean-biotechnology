@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paean Biotechnology</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tambahkan di <head> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -18,10 +16,6 @@
     <style>
         body {
             font-family: 'Manrope', sans-serif;
-        }
-
-        .about-section {
-            font-family: 'Plus Jakarta Sans', sans-serif;
         }
     </style>
 </head>
@@ -60,7 +54,6 @@
                                 class="ri-arrow-down-s-line text-[#1C74E8] text-lg transition-transform duration-300"></i>
                         </a>
 
-                        <!-- Dropdown -->
                         <ul id="dropdownMenu"
                             class="absolute left-1/2 top-full opacity-0 scale-95 transition-all duration-300 origin-top bg-[#1D1D1D] shadow-lg rounded-md mt-[30px] px-4 py-2 space-x-6 items-center w-[1050px] h-[50px] transform -translate-x-1/2 z-50 pointer-events-none">
                             <li>
@@ -128,53 +121,50 @@
     </div>
 
 
-    <section class="hero-section mt-[-100px] md:mt-0 bg-cover bg-center"
-        style="background-image: url('./assets/images/background-Mitochondria.svg');">
+    <section class="hero-section mt-0 bg-cover bg-center
+  bg-[url('./assets/images/background-Mitochondria-hp.svg')]
+  md:bg-[url('./assets/images/background-Mitochondria.svg')]">
         <div class="mx-auto w-full" style="max-width:1200px;">
-
-            <div class="h-screen md:h-[485px]  rounded-2xl flex items-center">
-
-                <div class="max-w-screen-xl mx-auto flex items-center justify-between px-8 md:px-10">
-
-                    <div class="left w-full md:max-w-[700px] flex-none">
-                        <h1 class="text-[43px] font-medium leading-tight text-[#1D1D1D] mb-4">
-                            The Power of <span class="text-[#24BB7D] font-extrabold italic">Mitochondria</span>
+            <div class="h-[645px] md:h-[485px] rounded-2xl flex items-center">
+                <div
+                    class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between px-7 md:px-10">
+                    <div class="left w-full md:max-w-[700px] flex-none text-left">
+                        <h1 class="text-[24px] md:text-[43px] font-medium leading-tight text-[#1D1D1D] mb-4">
+                            The Power of <span
+                                class=" text-[#1D1D1D] md:text-[#24BB7D] font-extrabold italic">Mitochondria</span>
                         </h1>
-                        <p class="text-[20px] text-[#535353] mb-6">
+                        <p class="text-[16px] md:text-[20px] text-[#535353] mb-6">
                             Often called the “powerhouse of the cell,” mitochondria play a central role in energy
                             production, cellular metabolism, and the regulation of cell life and death. Their
                             dysfunction is directly linked to a wide range of diseases—from neurodegeneration to cancer.
                         </p>
-
                     </div>
-
-                    <!-- Right -->
-                    <div class="hidden md:block right flex-shrink-0 mt-20 ml-[-100px]">
-                        <img src="./assets/images/image-hero.svg" alt="" class="w-[630px]">
+                    <div class="right mt-0 md:mt-20 md:ml-[-100px] flex-shrink-0">
+                        <img src="./assets/images/image-hero.svg" alt="" class="w-[480px] md:w-[630px]">
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="the-power-section py-10 mt-20">
 
-        <h2 class="text-center text-[32px] font-bold mb-6">
-            Mitochondria is <span class="text-[#24BB7D] font-bold italic">Essential</span> for Cells
+    <section class="essential-section py-10 mt-20">
+        <h2 class="text-center text-[24px] md:text-[32px] font-bold mb-6">
+            Mitochondria is <span class="text-[#1D1D1D] md:text-[#24BB7D]  font-extrabold italic">Essential</span> for
+            Cells
         </h2>
-        <p class="text-center text-[#5F5F5F] text-[20px] w-[830px] mx-auto mb-10">
+        <p class="text-center text-[#5F5F5F] text-[20px] w-[396px] md:w-[830px] mx-auto mb-10">
             Beyond energy generation, mitochondria are key players in calcium signaling, apoptosis, and immune
             responses.
             Their health determines how cells adapt, survive, and function—making them central to our therapeutic
             strategies.
         </p>
-
         <div style="max-width:1200px;"
             class=" mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-8 md:px-10">
-
-            <!-- Left -->
+            <div class="center block md:hidden flex-1 flex justify-center">
+                <img src="./assets/images/the-power-image.svg" alt="" class="max-w-[400px]">
+            </div>
             <div class="left flex-1 space-y-6">
                 <div class="box p-4 border rounded-lg shadow">
                     <h2 class="font-bold text-[18px] mb-1 text-[#1D1D1D]">🔋 Source of Energy</h2>
@@ -187,13 +177,9 @@
                         and redox signaling.</p>
                 </div>
             </div>
-
-            <!-- Center -->
-            <div class="center flex-1 flex justify-center">
+            <div class="center hidden md:block flex-1 flex justify-center">
                 <img src="./assets/images/the-power-image.svg" alt="" class="max-w-[400px]">
             </div>
-
-            <!-- Right -->
             <div class="right flex-1 space-y-6">
                 <div class="box p-4 border rounded-lg shadow">
                     <h2 class="font-bold text-[18px] mb-1  text-[#1D1D1D]">🧬 Cell Survival & Death</h2>
@@ -207,7 +193,6 @@
                         responses.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -215,18 +200,10 @@
         style="background-image: url('./assets/images/background-dysfunction.svg');">
         <div style="max-width:1200px;"
             class=" mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-start gap-10">
-
-
-            <!-- Left -->
             <div class="left md:w-1/2 space-y-5 mt-10">
-
                 <img src="./assets/images/dysfunction-diagram.svg" alt="">
-
             </div>
-
             <div class="kanan md:w-1/2 mt-20">
-
-
                 <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] mb-4 font-medium leading-snug">
                     <span class="text-[#24BB7D] font-extrabold italic">Mitochondria Dysfunction</span> <br>
                     Root of Many Diseases
@@ -247,20 +224,14 @@
                     illnesses at their root cause.
                 </p>
             </div>
-
-
         </div>
     </section>
 
 
-    <!-- Section -->
     <section class="importance-section mt-0 p-2 md:p-0">
         <div class="mx-auto w-full" style="max-width:1200px;">
-
             <div class="h-auto md:h-[550px] bg-cover bg-center rounded-2xl flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-14"
                 style="background-image: url('./assets/images/background-importance.svg');">
-
-                <!-- Left (Teks) -->
                 <div class="left md:w-1/2 space-y-6">
                     <h2 class="text-[28px] md:text-[32px] font-semibold text-[#fff] leading-snug">
                         Importance of <span class="text-[#4795FD] font-extrabold italic">Maintaining</span> <br>
@@ -274,76 +245,60 @@
                         stress, and enhance the cell’s resilience against aging and degeneration.
                     </p>
                 </div>
-
-                <!-- Right (Slider Gambar) -->
                 <div class="right md:w-1/2 flex justify-center">
                     <div class="swiper w-full max-w-[500px]">
                         <div class="swiper-wrapper">
-                            <!-- Slide 1 -->
                             <div class="swiper-slide flex justify-center">
                                 <img src="./assets/images/image-importance-1.svg" alt=""
                                     class="max-w-[350px] md:max-w-[500px]">
                             </div>
-                            <!-- Slide 2 -->
                             <div class="swiper-slide flex justify-center">
                                 <img src="./assets/images/image-importance-1.svg" alt=""
                                     class="max-w-[350px] md:max-w-[500px]">
                             </div>
-                            <!-- Slide 3 -->
                             <div class="swiper-slide flex justify-center">
                                 <img src="./assets/images/image-importance-1.svg" alt=""
                                     class="max-w-[350px] md:max-w-[500px]">
                             </div>
                         </div>
-
-                        <!-- Dot Pagination -->
                         <div class="swiper-pagination mt-4"></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
 
 
-
-    <section class="address-diases-section py-[90px] mt-[-100px] md:mt-0 bg-cover bg-center"
+    <section class="address-diases-section py-20 md:py-[90px]   bg-cover bg-center"
         style="background-image: url('./assets/images/address-diases-background.svg');">
-        <div style="max-width:1200px;"
-            class=" mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-start gap-10">
-
-
-            <!-- Left -->
-            <div class="left md:w-1/2 space-y-5 mt-10">
-
-                <img src="./assets/images/address-diases-image.svg" alt="">
-
+        <div class="max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center md:items-start gap-10">
+            <!-- Left Image -->
+            <div class="left w-full md:w-1/2 flex justify-center md:justify-start">
+                <img src="./assets/images/address-diases-image.svg" alt=""
+                    class="w-[80%] md:w-full max-w-sm md:max-w-full" />
             </div>
 
-            <div class="kanan md:w-1/2 mt-[150px]">
-
-
-                <h2 class="text-[28px] md:text-[32px] text-[#1D1D1D] mb-4 font-medium leading-snug">
-                    Address Diseases with <br> <span class="text-[#16B462] font-extrabold italic">PAEAN’s
-                        Mitochondria-</span> <br>based Technology
+            <!-- Right Content -->
+            <div class="kanan w-full md:w-1/2 mt-10 md:mt-20 text-left">
+                <h2 class="text-2xl md:text-[32px] text-[#1D1D1D] mb-4 font-medium leading-snug">
+                    Address Diseases with <br />
+                    <span class="text-[#16B462] font-extrabold italic">PAEAN’s Mitochondria-</span><br />
+                    based Technology
                 </h2>
-                <p class="text-[#5F5F5F] w-[540px] text-[18px] font-medium leading-relaxed">
-                    PAEAN is developing mitochondria-based technologies which offer potential therapeutic avenues for a
-                    wide range of diseases, from rare disease like Polymyositis/Dermatomyositis to mitochondrial
-                    dysfunction related diseases like neurodegenerative diseases, cancer, etc.
+                <p
+                    class="text-[#5F5F5F] text-base md:text-[18px] font-medium leading-relaxed max-w-[540px] mx-auto md:mx-0">
+                    PAEAN is developing mitochondria-based technologies which offer
+                    potential therapeutic avenues for a wide range of diseases, from rare
+                    disease like Polymyositis/Dermatomyositis to mitochondrial dysfunction
+                    related diseases like neurodegenerative diseases, cancer, etc.
                 </p>
-
             </div>
-
-
         </div>
     </section>
 
     <section class="footer-section bg-white text-white py-12 px-6 md:px-16 border border-[#E8E8E8]">
         <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-
-            <!-- Left -->
             <div class="left space-y-4">
                 <img src="./assets/images/footer-logo.svg" alt="Logo" class="w-[180px]">
                 <p class="text-[#5F5F5F] text-[15px] font-medium leading-relaxed">
@@ -355,11 +310,9 @@
                 </p>
                 <p class="text-[#5F5F5F] text-[15px] font-medium">Phone : 042-334-7378 | Fax : 042-334-7096</p>
             </div>
-
-            <!-- Center -->
             <div class="center grid grid-cols-2 gap-6">
                 <div>
-                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Navigation</h2>
+                    <h2 class="text-[#1C74E8] text-[18px] font-bold mb-3">Navigation</h2>
                     <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
                         <li><a href="#">Science</a></li>
                         <li><a href="#">About Us</a></li>
@@ -367,7 +320,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="text-[#24BB7D] text-[18px] font-bold mb-3">Other</h2>
+                    <h2 class="text-[#1C74E8] text-[18px] font-bold mb-3">Other</h2>
                     <ul class="space-y-2 text-[#5F5F5F] text-[18px]">
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Privacy Statement</a></li>
@@ -375,10 +328,8 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Right -->
             <div class="right space-y-4">
-                <h2 class="text-lg font-semibold">Subscribe Our News</h2>
+                <h2 class="text-lg text-[#1C74E8] font-semibold">Subscribe Our News</h2>
                 <div class="flex flex-col space-y-3">
                     <input type="email" placeholder="Email address"
                         class="w-full px-4 py-2 rounded-lg border border-gray-400 text-black  outline-none">
@@ -389,16 +340,15 @@
                 </div>
             </div>
         </div>
-
-        <!-- Full width border top -->
         <div class="w-full border-t border-[#E8E8E8] relative top-7">
-            <p class="text-center text-[14px] text-[#5F5F5F] mt-2 relative top-2">
+            <p class="text-center text-[14px] text-[#1C74E8] mt-2 relative top-2">
                 Copyrights © 2025 All Rights Reserved by
-                <span class=" font-bold text-[#24BB7D]">PAEAN BIOTECHNOLOGY</span>
+                <span class=" font-bold ">PAEAN BIOTECHNOLOGY</span>
             </p>
         </div>
 
     </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -408,8 +358,13 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
         });
     </script>
+
     <script src=" ./assets/js/homeMain.js">
     </script>
 </body>

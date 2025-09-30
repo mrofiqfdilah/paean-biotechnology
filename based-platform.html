@@ -118,160 +118,173 @@
         </ul>
     </div>
 
-
-    <section class="hero-section mt-[-100px] md:mt-0 bg-cover bg-center"
-        style="background-image: url('./assets/images/background-Mitochondria.svg');">
+    <section class="hero-section mt-0 bg-cover bg-center
+  bg-[url('./assets/images/background-Mitochondria-hp.svg')]
+  md:bg-[url('./assets/images/background-Mitochondria.svg')]">
         <div class="mx-auto w-full" style="max-width:1200px;">
-
-            <div class="h-screen md:h-[485px]  rounded-2xl flex items-center">
-
-                <div class="max-w-screen-xl mx-auto flex items-center justify-between px-8 md:px-10">
-
-                    <div class="left w-full md:max-w-[700px] flex-none">
-                        <h1 class="text-[43px] font-medium leading-tight text-[#1D1D1D] mb-4">
-                            Mitochondrial <span class="text-[#24BB7D] font-extrabold italic">Transplatation</span>
+            <div class="h-[645px] md:h-[485px] rounded-2xl flex items-center">
+                <div
+                    class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between px-7 md:px-10">
+                    <div class="left w-full md:max-w-[700px] flex-none text-left">
+                        <h1 class="text-[24px] md:text-[43px] font-medium leading-tight text-[#1D1D1D] mb-4">
+                            Mitochondrial <span
+                                class=" text-[#1D1D1D] md:text-[#24BB7D] font-extrabold italic">Transplatation</span>
                         </h1>
-                        <p class="text-[20px] text-[#535353] mb-6">
+                        <p class="text-[16px] md:text-[20px] text-[#535353] mb-6">
                             MitoTherapy Products are novel medicinal products using mitochondria isolated from human
                             stem cells or human blood. Mitochondria are unique organelles that are responsible for
                             energy production in cells. Based on our experimental results, mitochondria have a high
                             potential to treat inflammatory diseases.
                         </p>
-
                     </div>
-
-                    <!-- Right -->
-                    <div class="hidden md:block right flex-shrink-0 mt-20 ml-[-100px]">
-                        <img src="./assets/images/image-hero.svg" alt="" class="w-[630px]">
+                    <div class="right mt-0 md:mt-20 md:ml-[-100px] flex-shrink-0">
+                        <img src="./assets/images/image-hero.svg" alt="" class="w-[480px] md:w-[630px]">
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-
     <section class="celss-section bg-cover bg-center flex items-center justify-center py-16 mt-20"
         style="background-image: url('./assets/images/celss-background.svg');">
-        <div class="center text-center " style="max-width: 1168px;">
-            <h2 class="font-semibold text-[32px] text-[#1D1D1D]">
-                Mitochondria <span class="font-extrabold italic text-[#24BB7D]">Uptake</span> in Cells
+        <div class="center text-center max-w-[1168px] px-6">
+            <!-- Judul -->
+            <h2 class="font-semibold text-2xl md:text-[32px] text-[#1D1D1D] leading-snug">
+                Mitochondria
+                <span class="font-extrabold italic text-[#24BB7D]">Uptake</span> in Cells
             </h2>
-            <p class="text-[20px] w-[830px] mx-auto font-medium text-[#5F5F5F] mt-4">
-                Mitochondria, when introduced into a cell from the outside,
-                can be actively internalized through a process
-                called macropinocytosis, allowing them to integrate and influence cellular function.
+
+            <!-- Deskripsi -->
+            <p class="text-base md:text-[20px] max-w-[830px] mx-auto font-medium text-[#5F5F5F] mt-4 leading-relaxed">
+                Mitochondria, when introduced into a cell from the outside, can be actively
+                internalized through a process called macropinocytosis, allowing them to
+                integrate and influence cellular function.
             </p>
 
-            <img src="./assets/images/cells-image.svg" alt="" class="relative top-[60px] ">
+            <!-- Gambar -->
+            <div class="mt-10 md:mt-16">
+                <img src="./assets/images/cells-image.svg" alt="Cells illustration"
+                    class="mx-auto w-[100%] md:w-auto" />
+            </div>
         </div>
     </section>
 
+
     <section class="advantages-section bg-cover bg-center py-16 mt-20"
         style="background-image: url('./assets/images/advantages-background.svg');">
-
         <!-- Judul -->
-        <h2 class="text-[26px] italic font-extrabold text-[#16B462] text-left max-w-6xl mx-auto">
-            Advantages of Mitochondrial Transplantation
-        </h2>
-        <p class="text-[26px] font-medium text-[#1D1D1D] text-left mb-12 max-w-6xl mx-auto">
-            Unlocking Cellular Recovery Through Advanced MitoTherapy
-        </p>
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl md:text-[26px] italic font-extrabold text-[#16B462] text-left">
+                Advantages of Mitochondrial Transplantation
+            </h2>
+            <p class="text-lg md:text-[26px] font-medium text-[#1D1D1D] text-left mb-12">
+                Unlocking Cellular Recovery Through Advanced MitoTherapy
+            </p>
+        </div>
 
         <!-- Grid 2 kolom -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-6xl mx-auto px-6">
             <!-- Box 1 -->
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-4 md:gap-6">
                 <div
-                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
-                    <img src="./assets/images/advantages-atp.svg" class="w-[100px]" alt="">
+                    class="circle bg-[#F0FFF7] w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-atp.svg" class="w-[60px] md:w-[100px]" alt="" />
                 </div>
-                <div class="mt-5">
-                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Increasing ATP Production</h2>
-                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
+                <div class="mt-2 md:mt-5">
+                    <h2 class="text-base md:text-[18px] font-semibold text-[#1D1D1D]">
+                        Increasing ATP Production
+                    </h2>
+                    <p class="text-sm md:text-[16px] font-medium text-[#5F5F5F] mt-2 leading-relaxed">
                         Transplanted mitochondria help restore the cell’s energy powerhouse,
-                        significantly enhancing ATP levels vital for cell survival and function.
+                        significantly enhancing ATP levels vital for cell survival and
+                        function.
                     </p>
                 </div>
             </div>
 
             <!-- Box 2 -->
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-4 md:gap-6">
                 <div
-                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
-                    <img src="./assets/images/advantages-immunogenicity.svg" class="w-[100px]" alt="">
+                    class="circle bg-[#F0FFF7] w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-immunogenicity.svg" class="w-[60px] md:w-[100px]" alt="" />
                 </div>
-                <div class="mt-5">
-                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">No Immunogenicity</h2>
-                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
-                        s mitochondria can be autologous (sourced from the patient), they are naturally accepted by the
-                        immune system, minimizing rejection risk.
+                <div class="mt-2 md:mt-5">
+                    <h2 class="text-base md:text-[18px] font-semibold text-[#1D1D1D]">
+                        No Immunogenicity
+                    </h2>
+                    <p class="text-sm md:text-[16px] font-medium text-[#5F5F5F] mt-2 leading-relaxed">
+                        As mitochondria can be autologous (sourced from the patient), they are
+                        naturally accepted by the immune system, minimizing rejection risk.
                     </p>
                 </div>
             </div>
 
             <!-- Box 3 -->
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-4 md:gap-6">
                 <div
-                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
-                    <img src="./assets/images/advantages-function.svg" class="w-[100px]" alt="">
+                    class="circle bg-[#F0FFF7] w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-function.svg" class="w-[60px] md:w-[100px]" alt="" />
                 </div>
-                <div class="mt-5">
-                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Improving Mitochondrial Function</h2>
-                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
-                        Healthy mitochondria replace or support damaged ones, revitalizing cellular metabolism and
-                        restoring critical biochemical pathways.
+                <div class="mt-2 md:mt-5">
+                    <h2 class="text-base md:text-[18px] font-semibold text-[#1D1D1D]">
+                        Improving Mitochondrial Function
+                    </h2>
+                    <p class="text-sm md:text-[16px] font-medium text-[#5F5F5F] mt-2 leading-relaxed">
+                        Healthy mitochondria replace or support damaged ones, revitalizing
+                        cellular metabolism and restoring critical biochemical pathways.
                     </p>
                 </div>
             </div>
 
             <!-- Box 4 -->
-            <div class="flex items-start gap-6">
+            <div class="flex items-start gap-4 md:gap-6">
                 <div
-                    class="circle bg-[#F0FFF7] w-[150px] h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
-                    <img src="./assets/images/advantages-ros.svg" class="w-[100px]" alt="">
+                    class="circle bg-[#F0FFF7] w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center rounded-full border border-[#DEDEDE] flex-shrink-0">
+                    <img src="./assets/images/advantages-ros.svg" class="w-[60px] md:w-[100px]" alt="" />
                 </div>
-                <div class="mt-5">
-                    <h2 class="text-[18px] font-semibold text-[#1D1D1D]">Attenuating ROS Level and Inflammation</h2>
-                    <p class="text-[16px] font-medium text-[#5F5F5F] mt-2">
-                        Mitochondrial transfer helps reduce oxidative stress and inflammation by lowering reactive
-                        oxygen species (ROS) levels in damaged cells.
+                <div class="mt-2 md:mt-5">
+                    <h2 class="text-base md:text-[18px] font-semibold text-[#1D1D1D]">
+                        Attenuating ROS Level and Inflammation
+                    </h2>
+                    <p class="text-sm md:text-[16px] font-medium text-[#5F5F5F] mt-2 leading-relaxed">
+                        Mitochondrial transfer helps reduce oxidative stress and inflammation
+                        by lowering reactive oxygen species (ROS) levels in damaged cells.
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section class="preparing-section py-16">
+
+    <section class="preparing-section py-12 md:py-16">
         <!-- Judul -->
-        <h2 class="text-[32px] font-semibold text-[#1D1D1D] text-center mb-12">
-            Preparing <span class="text-[#16B462] font-extrabold italic">Mitochondria</span> for Therapeutic Use
+        <h2 class="text-2xl md:text-[32px] font-semibold text-[#1D1D1D] text-center mb-8 md:mb-12 px-4">
+            Preparing
+            <span class="text-[#16B462] font-extrabold italic">Mitochondria</span> for
+            Therapeutic Use
         </h2>
 
         <!-- Grid Layout -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
-
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 items-center max-w-6xl mx-auto px-6">
             <!-- Left: Menu -->
-            <div class="flex flex-col gap-6 ml-5">
+            <div class="flex flex-col gap-4 md:gap-6">
                 <button
-                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#16B462] border-[#16B462] text-[#16B462] font-semibold"
+                    class="tab-btn text-left border-l-4 pl-3 text-lg md:text-[24px] font-medium text-[#16B462] border-[#16B462] font-semibold"
                     data-tab="banking">
                     Stem Cells Banking
                 </button>
                 <button
-                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    class="tab-btn text-left border-l-4 pl-3 text-lg md:text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
                     data-tab="cultivation">
                     Stem Cells Cultivation
                 </button>
                 <button
-                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    class="tab-btn text-left border-l-4 pl-3 text-lg md:text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
                     data-tab="isolation">
                     Isolation of Mitochondria
                 </button>
                 <button
-                    class="tab-btn text-left border-l-4 pl-3 text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
+                    class="tab-btn text-left border-l-4 pl-3 text-lg md:text-[24px] font-medium text-[#5F5F5F] border-[#E5E5E5]"
                     data-tab="formulation">
                     Formulation
                 </button>
@@ -280,22 +293,23 @@
             <!-- Center: Image -->
             <div class="flex justify-center">
                 <img id="tab-image" src="./assets/images/preparing-image.svg" alt=""
-                    class="w-[350px] h-[350px] rounded-xl object-cover fade">
+                    class="w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-xl object-cover fade" />
             </div>
 
             <!-- Right: Content -->
-            <div>
-                <h2 id="tab-title" class="text-[24px] font-bold text-[#1D1D1D] fade">
+            <div class="text-center md:text-left mt-6 md:mt-0">
+                <h2 id="tab-title" class="text-xl md:text-[24px] font-bold text-[#1D1D1D] fade">
                     Stem Cells Banking
                 </h2>
-                <p id="tab-desc" class="text-[20px] font-medium text-[#5F5F5F] mt-4 fade">
+                <p id="tab-desc"
+                    class="text-base md:text-[20px] font-medium text-[#5F5F5F] mt-3 md:mt-4 fade leading-relaxed">
                     High-quality stem cells are securely preserved under optimal conditions.
                     This ensures availability for future therapeutic applications.
                 </p>
             </div>
-
         </div>
     </section>
+
 
     <!-- Style Fade -->
     <style>
